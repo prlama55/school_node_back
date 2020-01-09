@@ -27,8 +27,14 @@ We’ll be installing it locally by using given below command.
 
 5. `touch db.js`
 
-#If you are cloning the repo:
+# If you are cloning the repo:
+
 `git clone https://github.com/prlama55/school_node_back.git`
+
 `cd school_node_back`
+
 `npm i`
-###Run project: `npm start`
+
+### Run project: 
+
+`npm start`
