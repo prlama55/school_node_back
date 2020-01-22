@@ -3,7 +3,6 @@ require('../models/Student')
 const Student = mongoose.model('Student');
 
 exports.list_all_students = (req, res) => {
-  console.log("===================")
   Student.find({}, function(err, student) {
     if (err)
       res.send(err);
@@ -12,11 +11,12 @@ exports.list_all_students = (req, res) => {
 };
 
 exports.create_a_student = (req, res) => {
+  console.log("===================",req.body)
   const new_student = new Student(req.body);
   new_student.save(function(err, student) {
     if (err)
       res.send(err);
-    res.json(student);
+    res.send(student);
   });
 };
 
